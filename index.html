@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rick & Morty</title>
+    </head>
+    <link rel="stylesheet" href="app.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+    <body>
+        <div class="container" test="">
+            <img src="icons8-audio-skimming-50.png" alt="audio" onclick="togglePlay()">
+            <h1>Tic-Tac-Toe</h1>
+            <ul id="game">
+                <!-- first row -->
+                <li data-pos="0,0"></li>
+                <li data-pos="0,1"></li>
+                <li data-pos="0,2"></li>
+                <!-- second row -->
+                <li data-pos="1,0"></li>
+                <li data-pos="1,1"></li>
+                <li data-pos="1,2"></li>
+                <!-- third row -->
+                <li data-pos="2,0"></li>
+                <li data-pos="2,1"></li> 
+                <li data-pos="2,2"></li> 
+            </ul>
+            
+            <button id="reset-game">Reset Game</button>
+            <button id="restart-game" onclick="window.location.reload();">Restart</button>
+            <hr>
+            <!-- Game Messages -->
+            <div id="game-messages">
+                <span class="player-x-win">Rick Wins!!</span>
+                <span class="player-o-win">Morty Wins!!</span>
+                <span class="draw">Its a Tie!</span>
+            </div>
+
+            <audio id="rick-wins"></audio>
+            <audio id="backgroudSound" src="Rick and Morty - Rick and Morty Theme.mp3"></audio>
+            
+            <aside id="nfo">
+                <h2>Who's Turn</h2>
+                <div id="whos-turn" class="x">
+                    <span class="x">Rick - X</span>
+                    <span class="o">Morty - O</span>
+                </div>
+                
+                <h2>Score Card</h2>
+                <div id="score">
+                    Rick: <span id="player-one-score">0</span> <br />
+                    Morty: <span id="player-two-score">0</span> <br />
+                </div>
+            </aside>
+            <h3>© by schubrian </h3>
+        </div>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

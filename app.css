@@ -1,0 +1,147 @@
+body {
+    margin-top: 40px;
+    background: yellow;
+    background-image: url("https://wallpaperboat.com/wp-content/uploads/2019/04/rick-and-morty-wallpaper-portal-wallpaper-007.jpg"),url("https://i.pinimg.com/originals/da/7a/8e/da7a8ef32e993c6b6b854622aac0badc.gif"), url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b31ff556-b57a-4135-8798-efa11ce85221/db4b5j7-b67ae32f-52df-4012-9d66-421d934d993c.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IzMWZmNTU2LWI1N2EtNDEzNS04Nzk4LWVmYTExY2U4NTIyMVwvZGI0YjVqNy1iNjdhZTMyZi01MmRmLTQwMTItOWQ2Ni00MjFkOTM0ZDk5M2MuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.qod9AJ_637aomATT38qO_ITztPvaYLmcyN6kmQdq96Q");
+    background-position: center, right center, left bottom;
+    height: 100%;
+    background-size: cover, 220px, 350px;
+    background-attachment: fixed,fixed,fixed;
+    background-repeat: no-repeat,no-repeat, no-repeat;
+        color: rgb(247, 247, 14);
+        font-family: Helvetica;
+    font-weight: bold;
+    text-align:center;
+    font: normal 11px comic sans ms;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #8af80b
+}
+
+img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: #8af80b;
+    margin-right:  20px;
+    margin-top: 20px;
+}
+
+h3 {
+    color: khaki;
+    font-size: 9px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 380px;
+    background: rgba(10, 10, 202, 0.654);
+}
+
+#game {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #dadada;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#game > li {
+    list-style: none;
+    float: left;
+    overflow: hidden;
+    text-decoration:none;
+    width: 100px;
+    height: 100px;
+    background: #340fdb9c;
+    border: 1px solid rgb(237, 253, 9);
+    border-right: 1px solid rgb(167, 238, 12);
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#game > li.x {
+    font-size: 40px;
+    color: #ed4e6e
+}
+
+#game > li.o {
+    font-size: 40px;
+    color: #485b6e;
+}
+
+#game > li:hover {
+    background: #f9f9f9;
+}
+
+#game > li:active {
+    width: 100px;
+    height: 100px;
+    border: 0;
+}
+
+#nfo {
+    text-align:center;
+    margin-top: 10px;
+}
+
+#whos-turn > span,
+#game-messages > span {
+    display: none;
+}
+
+#whos-turn.x span.x,
+#whos-turn.o span.o, 
+#game-messages.player-x-win > span.player-x-win, 
+#game-messages.player-o-win > span.player-o-win,
+#game-messages.draw > span.draw {
+    display: block;
+    margin-top: 10px;
+}
+
+#reset-game {
+    text-align: center;
+        border: none;
+        padding: 0.6em 1.2em;
+        background: #4d39bdcf;
+        color: rgb(241, 237, 27);
+        font-size: 1em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        cursor: pointer;
+        display: inline-block;
+        margin: 3px 2px;
+        border-radius: 2px;
+        font: normal 12px comic sans ms;
+}
+
+#reset-game:hover {
+        background: #2c3e52;
+}
+
+#restart-game {
+    text-align: center;
+        border: none;
+        padding: 0.6em 1.2em;
+        background: #4c39bd;
+        color: rgb(241, 237, 27);
+        font-size: 1em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        cursor: pointer;
+        display: inline-block;
+        margin: 3px 2px;
+        border-radius: 2px;
+        font: normal 12px comic sans ms;
+}
+
+#restart-game:hover {
+    background: #2c3e52;
+}
